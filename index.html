@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7a1f1f" />
+  <title>TN Jewellery — Timeless Elegance in Gold, Silver, Platinum & Diamond</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Cinzel:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="rate-ticker" id="rateTicker">
+    <div class="ticker-track" id="tickerTrack">
+      <span><i class="fa-solid fa-tower-broadcast"></i> Loading live rates...</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">
+        <div class="brand-mark">TN</div>
+        <div class="brand-text">
+          <div class="brand-name">TN Jewellery</div>
+          <div class="brand-tag">Heritage · Purity · Trust</div>
+        </div>
+      </a>
+      <nav class="primary-nav" id="primaryNav">
+        <a href="#home">Home</a>
+        <a href="#gold">Gold</a>
+        <a href="#silver">Silver</a>
+        <a href="#platinum">Platinum</a>
+        <a href="#diamond">Diamond</a>
+        <a href="#contact">Visit</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="cartBtn" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="badge" id="cartBadge">0</span>
+        </button>
+        <button class="ghost-btn" id="loginBtn">
+          <i class="fa-regular fa-user"></i>
+          <span id="loginLabel">Login</span>
+        </button>
+        <button class="icon-btn mobile-only" id="menuBtn" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="dot"></span> Estd. Heritage Collection</div>
+        <h1>Adorn the Story <br/><span class="accent">of a Lifetime.</span></h1>
+        <p class="lede">Handcrafted jewellery in 22K gold, 925 silver, certified platinum and IGI-graded diamonds. Curated for the moments you'll remember forever.</p>
+        <div class="hero-cta">
+          <a href="#gold" class="btn primary">Shop Collection <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn outline">Visit Showroom</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>BIS </strong> Hallmarked</div>
+          <div><strong>IGI</strong> Certified Diamonds</div>
+          <div><strong>Lifetime</strong> Buyback</div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="https://images.news18.com/ibnlive/uploads/2021/12/happy-birthday-rajinikanth-16392481473x2.jpg" alt="Featured" />
+        <div class="hero-card-overlay">
+          <div class="ribbon">New Arrival</div>
+          <div class="hero-card-title">Royal Mango Haar</div>
+          <div class="hero-card-sub">22K · 48.6 g · BIS 916</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cat-strip container">
+    <a href="#gold" class="cat-chip gold-chip"><i class="fa-solid fa-crown"></i> Gold</a>
+    <a href="#silver" class="cat-chip silver-chip"><i class="fa-solid fa-gem"></i> Silver</a>
+    <a href="#platinum" class="cat-chip platinum-chip"><i class="fa-solid fa-ring"></i> Platinum</a>
+    <a href="#diamond" class="cat-chip diamond-chip"><i class="fa-solid fa-star"></i> Diamond</a>
+  </section>
+
+  <main class="container">
+    <section class="category" id="gold">
+      <header class="cat-header"><h2>Gold <span>Collection</span></h2><p>22K BIS hallmarked. Pure tradition, contemporary craft.</p></header>
+      <div class="product-grid" data-grid="gold"></div>
+    </section>
+    <section class="category" id="silver">
+      <header class="cat-header"><h2>Silver <span>Collection</span></h2><p>925 sterling silver. Everyday elegance, oxidised charm.</p></header>
+      <div class="product-grid" data-grid="silver"></div>
+    </section>
+    <section class="category" id="platinum">
+      <header class="cat-header"><h2>Platinum <span>Collection</span></h2><p>950 Platinum. Rare, enduring, and uncompromisingly modern.</p></header>
+      <div class="product-grid" data-grid="platinum"></div>
+    </section>
+    <section class="category" id="diamond">
+      <header class="cat-header"><h2>Diamond <span>Collection</span></h2><p>IGI-certified solitaires and pavé. A forever promise.</p></header>
+      <div class="product-grid" data-grid="diamond"></div>
+    </section>
+  </main>
+
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div>
+        <h2>Visit our Showroom</h2>
+        <p class="muted">Step in for a private viewing. Tea, on us.</p>
+        <ul class="addr-list">
+          <li><i class="fa-solid fa-location-dot"></i> <span id="shopAddress">Tamil Nadu, India</span></li>
+          <li><i class="fa-solid fa-phone"></i> <span id="shopPhone">+91 1234567890 </span></li>
+          <li><i class="fa-regular fa-envelope"></i> <span id="shopEmail">mail@gmail.com</span></li>
+          <li><i class="fa-regular fa-clock"></i> Mon – Sat · 10:00 AM – 9:00 PM</li>
+        </ul>
+      </div>
+      <div class="contact-card">
+        <h3>Promise of Purity</h3>
+        <ul class="promise">
+          <li><i class="fa-solid fa-shield-halved"></i> 100% BIS Hallmarked Gold</li>
+          <li><i class="fa-solid fa-certificate"></i> IGI / GIA Certified Diamonds</li>
+          <li><i class="fa-solid fa-rotate"></i> Lifetime Exchange &amp; Buyback</li>
+          <li><i class="fa-solid fa-print"></i> Detailed Printed Invoice</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="yr"></span> TN Jewellery . All rights reserved.</div>
+      <div class="muted">Crafted with care in India</div>
+    </div>
+  </footer>
+
+  <div class="modal" id="loginModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" data-close>&times;</button>
+      <h3>Welcome to TN Jewellery</h3>
+      <p class="muted">Login to save favourites and print invoices.</p>
+      <form id="loginForm">
+        <label>Full Name <input type="text" id="liName" required minlength="2" placeholder="Your full name" /></label>
+        <label>Phone Number <input type="tel" id="liPhone" required pattern="[0-9+\- ]{7,15}" placeholder="+91 9XXXXXXXXX" /></label>
+        <label>Email <input type="email" id="liEmail" required placeholder="you@example.com" /></label>
+        <button type="submit" class="btn primary block">Continue</button>
+      </form>
+      <div class="muted small">By continuing you agree to our terms.</div>
+    </div>
+  </div>
+
+  <aside class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-head"><h3>Your Bag</h3><button class="modal-close" data-close-drawer>&times;</button></div>
+    <div class="drawer-body" id="cartBody"><div class="empty">Your bag is empty.</div></div>
+    <div class="drawer-foot">
+      <div class="row"><span>Subtotal</span><strong id="cartTotal">₹ 0</strong></div>
+      <button class="btn primary block" id="checkoutBtn">Checkout &amp; Print Invoice</button>
+    </div>
+  </aside>
+
+  <div class="invoice-overlay" id="invoiceOverlay" aria-hidden="true">
+    <div class="invoice-toolbar no-print">
+      <button class="btn outline" id="closeInvoice"><i class="fa-solid fa-arrow-left"></i> Back</button>
+      <button class="btn primary" id="printInvoice"><i class="fa-solid fa-print"></i> Print Invoice</button>
+    </div>
+    <div class="invoice-sheet" id="invoiceSheet"></div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
